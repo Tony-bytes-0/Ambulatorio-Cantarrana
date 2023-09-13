@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%;">
+<head><!--id historia medica/ id persona/ id enfermera/ 
+ALTURA PESO TEMPERATURA FECHA RAZON DE LA VISITA PRESION ARTERIAL SITOMAS-->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Historias Medicas</title>
+</head>
+<body style="height:100%;">
+    <span ><h2 class="azul-Oscuro centrate">Registro de Historia Medica</h2></span>
+    <div id="root" class="container-fluid" style="height:100%; display: flex;">
+        <div class="row verticalFlex SIDEBAR" style="margin-right: 15px;">
+                <button class="btn btn-primary basicBorders">Consulta</button>
+                <button class="btn btn-primary basicBorders">Registro</button>
+                <button class="btn btn-primary basicBorders">Historias Medicas</button>
+        </div>
+        <div id="mainFrame">
+            <div id="MainFrame 1" class="row" style="margin-top: 3em;">
+                <div class="col">           <!-- ALTURA-->
+                    <label class="col"><b>Altura</b></label>
+                    <input class="simpleInput"></input>
+                </div>
+
+                <div class="col">           <!-- PESO -->
+                    <label class="col"><b>Peso</b></label>
+                    <input class="simpleInput"></input>
+                </div>
+                
+                <div class="col">           <!-- TEMPERATURA -->
+                    <label class="col"><b>Temperatura</b></label>
+                    <input class="simpleInput "></input>
+                    <labe class="col">Grados: </label>
+                        <select class="col"> 
+                            <option>Celcius</option> <option>Kelvin</option> <option>Ferenheit</option>
+                        </select>
+                </div>
+
+                <div class="col-3">           <!-- Presion arterial -->
+                    <label class="col"><b>Presion arterial</b></label>
+                    <input class="simpleInput"></input>
+                </div>  
+       
+            </div>
+            <!----------------------------------------------------------------->
+            <div id="MainFrame 3" class="row" style="margin-top: 2em;">
+                <div class="col">           <!-- Motivo Visita -->
+                    <label class="col"><b>Motivo Visita</b></label>
+                    <select class="col simpleInput" style="height:40px"> 
+                        <option>Consulta</option> <option>Tratamiento</option> <option>Emergencia</option>
+                    </select>
+                </div> 
+                
+                <div class="col">           <!-- Fecha de consulta -->
+                    <label class="col"><b>Fecha de Consulta</b></label>
+                    <input class="simpleInput" type="date" style="height:40px"></input>
+                </div> 
+       
+            </div>
+    <!-------------------------------------------------------------------------------------------->
+            <div id="Separador"  style="margin-top: 2em;">
+                <span ><h2 class="azul-Oscuro col centrate">Sintomas</h2></span>
+            </div>
+            <div class="row">
+                <div class="col">           <!-- Sintomas -->
+                    <select class="col" style="height:40px"> 
+                        <option>Fiebre</option> <option>Malestars</option> <option>Otras Weas, no c, no soy medico</option>
+                    </select>
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-success">Añadir</button>
+                </div>
+            </div>
+            <div id="SINTOMAS" class="col" style="margin-top: 5em;">
+                <div class="row SIDEBAR">
+                    <label class="col"><b>Sintoma:</b> </label>
+                    <label class="col"><b>valor dinamico!</b> </label>
+                    <label class="basicBorders col">Gravedad: </label>
+                    <label class="basicBorders col">Leve</label>
+                    <input class="basicBorders col" type="checkbox"/>
+                    <label class="basicBorders col">Moderada</label>
+                    <input class="col" type="checkbox"/>
+                    <label class="basicBorders col">Grave</label>
+                    <input class="basicBorders col" type="checkbox"/>
+                    <button class="btn btn-danger">Eliminar</button>
+                </div>  
+            </div>
+
+                
+                
+            </div>
+        </div>
+    
+    
+    </div>
+    
+</body>
+</html>

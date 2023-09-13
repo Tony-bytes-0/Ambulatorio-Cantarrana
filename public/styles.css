@@ -1,0 +1,82 @@
+.centrate{text-align: center; justify-content: center; align-items: center; }
+/*<Box sx={{margin:'auto', textAlign: 'center', justifyContent: 'center', alignItems: 'center'}}>*/
+.right{ align-items:right; justify-content: right; }
+.basicBorders{padding:10px;margin: 10px;}
+.topped{top: 0%; justify-content: start;}
+.verticalFlex{display: flex;flex-direction: column;}
+.horizontalFlex{display: flex;flex-direction:row;flex-wrap: wrap;}
+.flexible{display: flex;}
+.fitContent{word-break: break-all;font-size: large; flex-wrap: wrap;}
+.separator{border-color:rgb(59, 53, 64); border-style: solid; border-width: 10px; border-left: 0; border-right: 0; border-top: 0;}
+.tittle{font-size: large;}
+.h500{height: 500px;}
+.link{text-decoration: underline; color: blue;}
+.scroll{overflow: scroll;}
+
+
+.modalDiv{overflow-y: auto; overflow-x: hidden;}
+
+.modalCentratedSmall{height: 40%; padding: 5%; margin-left:10%; margin-right: 10%; margin-top: 10%; background-color: white;}
+.modalStaticValues{ height: 60%; padding: 5%; margin-left:10%; margin-right: 10%; margin-top: 10%; background-color: white;}
+.modalCentratedFull{ height: 90%; padding: 5%; margin-left:10%; margin-right: 10%; margin-top: 1%; background-color: white;}
+
+.modalColor{ background-color: white; }
+
+.updateModal{height: 500px; margin-top: 6%;}
+
+.azul-Oscuro{background-color: rgb(53, 127, 212);}
+.smallMargin{margin-top: 1em; margin-bottom: 1em; padding: 2px; }
+
+/*Login*/
+.login{height: 100%; width: 100%; padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }/*border: 2px; border-style:solid; border-color: gray;*/
+
+/*reciclarn't*/
+.STATUSBAR{background-color: rgb(64, 150, 249);display: flex;padding: 10px;margin: 0%;
+    border-color:rgb(43, 44, 129); border-style: solid; border-width: 2px; border-bottom-width: 1.4px;}
+.statusBarMenu{background-color: rgb(194, 206, 219); padding: 5px;display: flex;}
+.SIDEBAR{border-color:rgb(80, 71, 88); border-style: solid; 
+    border-width: 2px; border-top-width: 0.5px; height: 100%; opacity: 90%;}
+.userType{ background-color: rgb(158, 197, 209); padding: 25px;}
+.buttonMenuBtn{ background-color: rgb(229, 229, 229) }
+/*reciclarn't*/
+
+.spinnerContainer{
+    position: absolute;
+    margin: auto;
+    height: 15%;
+    width: 60%;
+    top: 40%;
+    left: 40%;
+}
+/* efecticos */
+.hoverDown:hover{
+    background-color: gray;
+}
+/*----------------------------*/
+.fadeIn{
+  animation: fadeIn 1s;
+}
+.animationSlideIn {
+  animation-duration: 0.5s;
+  animation-name: slidein;
+} @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+/*----------------------------*/
+@keyframes slidein {
+  from {
+    margin-left: 0%;
+    width: 100%
+  }
+
+  to {
+    margin-left: 10%;
+    width: 100%;
+  }
+}
+
+

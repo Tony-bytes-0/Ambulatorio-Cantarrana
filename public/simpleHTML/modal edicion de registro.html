@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="simpleModalBackground"></div><!--este div para dar blur al fondo-->
+    <div id="root" class="container-fluid fullFlex" >
+        <div id="editModal" class="container simpleModal">
+            <div style="display:flex; flex-direction:row-reverse">
+                <button class="btn btn-danger" style="opacity:60%;">X</button>
+            </div>
+            <div class="row centrate">
+                <div class="centrate verticalFlex">
+                    <img class="rounded-circle" src="../Img/blue-Lobster.jpg" alt="blueLobster" style="height:10%;width: 10%;" />
+                    <label class="col">Inserte una Foto</label>
+                    <input type="file"/>
+                </div>
+            </div>
+            <div id="primera fila" class="row" style="margin-top:2em;">
+                <div class="col">
+                    <label class="col">Cedula: </label>
+                    <input class="col" type="text"/>
+                </div>
+                <div class="col">
+                    <label class="col">Nombre: </label>
+                    <input class="col" type="text"/>
+                </div>
+                <div class="col">
+                    <label class="col">Apellido: </label>
+                    <input class="col" type="text"/>
+                </div>
+                <div class="col">
+                    <label class="col">Genero: </label>
+                    <select class="col"><option>Masculino</option><option>Femenino</option></select>
+                </div>
+            </div>
+
+            <div id="segunda fila" class="row" style="margin-top:2em;" >
+                <div class="col">
+                    <label class="col">Alergias: </label>
+                    <select class="col">
+                        <option>Desconocido</option>
+                        <option>Ibuprofeno</option>
+                        <option>Polvo</option>
+                        <option>Lactosa</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label class="col">Enfermedades Cronicas: </label>
+                    <select class="col">
+                        <option>Desconocidas</option>
+                        <option>Asma</option>
+                        <option>Cancer</option>
+                        <option>Diabetes</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label class="col">Discapacidades </label>
+                    <select class="col">
+                        <option>Miopia</option>
+                        <option>Espectros de Autismo</option>
+                        <option>Invalido</option>
+                    </select>
+                </div>   
+                <div class="col">
+                    <label class="col">Tipo de Sangre: </label>
+                    <select class="col">
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="Tercera Fila" class="row">
+                <div class="col">
+                    <label class="col">Telefono: </label>
+                    <input class="col" type="text"/>
+                </div>
+                <div class="col">
+                    <label class="col">Fecha de Nacimiento: </label>
+                    <input class="col" type="date"/>
+                </div>
+            </div>
+
+            <div id="Cuarta Fila" class="row" style="padding:10px;margin:auto">
+                <span class="col centrate azul-Oscuro" >
+                    <h2>Direccion de Residencia:</h2>
+                </span>
+            </div>
+
+            <div id="Quinta Fila" class="row">
+                <div class="col">
+                    <label class="col">Municipio: </label>
+                    <select class="col">
+                        <option>Ejemplo</option>
+                        <option>Ejemplo</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label class="col">Parroquia </label>
+                    <select class="col">
+                        <option>Ejemplo</option>
+                        <option>Ejemplo</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label class="col">Sector </label>
+                    <select class="col">
+                        <option>Ejemplo</option>
+                        <option>Ejemplo</option>
+                    </select>
+                </div>   
+            </div>
+            <div id="Ultima Fila" class="row centrate" style="margin:2em ;">
+                <span><button class="btn btn-success">Listo!</button></span>
+            </div>
+        </div>  
+
+    </div>
+</body>
+</html>
